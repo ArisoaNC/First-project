@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang='fr'>
+    <head>
+        <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+        <link rel="shortcut icon" href="PHOTO/logo.ico">
+        <title>Stella R </title>
+    </head>
+    <body>
+    <div id="header">
+        <div id="menu">
+        <ul>
+            <li><a  href="../page3/Commande.html">Commander</a></li>
+            <li><a  href="../page2/Collection.html">Nos collections</a></li>
+            <li><a  href="index.html" class="active">Accueil</a></li>
+        </ul>
+        </div>
+        <div class="head-item">
+            <p><a style="float:left; margin-top:-40px; margin-left:50px; margin-bottom: -10PX;" href="index.html"><img src="PHOTO/IMG_20230129_170145.png" alt="logo" width="45" height="45"></a></p>
+        </div>
+    </div>
+    <div>
+        <div class="sec-st-content">
+            <div >
+                <img name="slide">
+            </div>
+        </div>
+        <div class="sec-nd-content">
+            <p><span class="imp-wrd">Choisissez votre STYLE.</span></p><p>Acheter vos chaussures en ligne</p> sur <strong>Stella R .</strong></p>
+            <a  href="../page2/Collection.html"><button>Nos collections</button></a>
+        </div>    
+    </div>
+    <div id="footer">
+       <p><a href="https://www.facebook.com/stella R">facebook</a> <br> <span class="phone">Tel: +261341682178</span> </p>
+    </div>
+    <script>
+        var i=0;
+        var img=['PHOTO/images2.jpg','PHOTO/pexels-ray-piedra-1478442.jpg','PHOTO/1673870910797_1.jpg','PHOTO/pexels-loc-dang-2421374 (3).jpg','PHOTO/images4 (2).jpg'];
+        var time=2500;
+        function changeImg(){
+            document.slide.src=img[i]
+            if (i<img.length-1){
+                i++;
+            }
+            else{
+                i=0;
+            }
+            setTimeout("changeImg()", time);
+        }
+       
+        window.onload=changeImg;
+     </script>
+    
+    </body>
+</html>
